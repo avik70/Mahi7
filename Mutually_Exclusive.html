@@ -1,0 +1,139 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			  function playSound ( soundname )   
+			  {
+			    var thissound = document.getElementById( soundname );
+			    thissound.Play();
+			    alert( "Played " + soundname );
+			  }
+			  playSound( "beep" );
+		</script>
+		<link href="formulas.css" rel="stylesheet" media="screen">
+		<link href="MutuallyExclusive.css" rel="stylesheet" media="screen">
+	</head>
+	<body>
+		<div class="container">
+			<section class="animation">
+				<!-- <h2>Animation</h2> -->
+				 <embed src="ME.wav" autostart="true" width="0" height="0" id="beep" 
+  enablejavascript="true">
+				<audio autoplay>
+				  <source src="ME.ogg" type="audio/ogg">
+				  <source src="ME.mp3" type="audio/mpeg">
+				  	<source src="ME.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				</audio> 
+				<div class="line1">
+					<div class="circleRed">				
+					</div>
+					<div class="circleBlue">					
+					</div>
+					<div class="circleGreen">					
+					</div>
+					<div class="circleGreen">					
+					</div>
+					<div class="circleRed">					
+					</div>
+				</div>
+				<div class="line2">
+					<div class="circleRed">
+					</div>
+					<div class="circleGreen">					
+					</div>
+					<div class="circleRed">					
+					</div>
+					<div class="circleRed">					
+					</div>
+					<div class="circleBlue">					
+					</div>
+				</div>
+				<div class="line3">
+					<div class="cRed">
+						<b>
+							<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+							 <g>
+							  <title>Layer 1</title>
+							  <text id="svg_6" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="82.5" x="58.00781" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#fff">10</text>
+							  <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_1" y="55" x="58" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#fff">5</text>
+							  <line id="svg_4" y2="60" x2="73" y1="60" x1="43" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" stroke="#fff" fill="none"/>
+							 </g>
+							</svg>
+						</b>
+					</div>
+					<div class="cGreen">	
+						<b>				
+							<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+							 <g>
+							  <title>Layer 1</title>
+							  <text id="svg_6" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="82.5" x="58.00781" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#fff">10</text>
+							  <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_1" y="55" x="58" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#fff">3</text>
+							  <line id="svg_4" y2="60" x2="73" y1="60" x1="43" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" stroke="#fff" fill="none"/>
+							 </g>
+							</svg>
+						</b>
+					</div>
+					<div class="cBlue">	
+						<b>
+							<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+							 <g>
+							  <title>Layer 1</title>
+							  <text id="svg_6" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="82.5" x="58.00781" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#fff">10</text>
+							  <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_1" y="55" x="58" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#fff">2</text>
+							  <line id="svg_4" y2="60" x2="73" y1="60" x1="43" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" stroke="#fff" fill="none"/>
+							 </g>
+							</svg>
+						</b>
+					</div>
+				</div>
+				<div class="line4">
+					<p class="red">Probability of drawing Red Ball = 0.5</p>
+					<p class="green">Probability of drawing Green Ball = 0.3</p>
+					<p class="blue">Probability of drawing Blue Ball = 0.2</p>
+				</div>
+				<div class="line5">
+					<p class="tp">Total Probability</p>
+					<p class="equalto1"> = </p>
+					<p class="red"> 0.5 </p>
+					<p class="plus1"> + </p>
+					<p class="green"> 0.3 </p>
+					<p class="plus2"> + </p>
+					<p class="blue"> 0.2 </p>
+					<p class="equalto2"> = </p>
+					<p class="ans"> 1 </p>
+				</div>
+			</section>
+			<div class="sub_container">
+				<section class="formula">
+					<h2>Formula</h2>
+					<span>
+						<p>Probabilities of Mutually Exclusive Events</p>
+						<p>If two events are &#39;mutually exclusive&#39; they cannot occur at the same time.</p>
+						<p>For mutually exclusive events the total probabilities must add up to 1.</p>
+						<p>Show Step-by-step Solutions</p>
+						<p>Probability - P(A ∪ B) and Mutually Exclusive Events</p>
+						<p>P(A ∪ B) = P(A) + P(B) - P(A ∩ B)</p>
+						<p>For mutually exclusive events, P(A ∩ B) = 0.</p>
+					</span>
+				</section>
+				<section class="description">
+					<h2>Description</h2>
+					<p>The probabilities of three teams A, B and C winning a badminton competition are 1/3,1/5 and 1/9 respectively.</p>
+					<p>
+						Calculate the probability that.<br>
+						a) either A or B will win.<br>
+						b) either A or B or C will win.<br>
+						c) none of these teams will win.<br>
+						d) neither A nor B will win.</p>
+					<p>Answers to follow.</p>
+					<p>
+						a)P(A or B will win)= 1/3 + 1/5 = 8/15.<br>
+						b)P(A or B or C will win)= 1/3 + 1/5 + 1/9 = 29/45.<br>
+						c) P(none will win) = 1 – P(A or B or C will win) 1-29/45 = 16/45.<br>
+						d) P(neither A nor B will win) = 1 – P(either A or B will win) 1-8/15= 7/15.
+					</p>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>

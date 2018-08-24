@@ -1,0 +1,141 @@
+<html>
+	<head>
+		<link href="formulas.css" rel="stylesheet" media="screen">
+		<link href="coin_css.css" rel="stylesheet" media="screen">
+		<script>
+			window.addEventListener("load", myFunction);
+			var secondPage=document.getElementById('secondPage');
+			function myFunction() { 
+			    setTimeout(function() {
+			        window.location.href="./Mutually_Exclusive.html";
+			    }, 46000);
+			}
+			// function playSound ( soundname )   
+			// {
+			// 	var thissound = document.getElementById( soundname );
+			// 	thissound.Play();
+			// 	alert( "Played " + soundname );
+			// }
+			// playSound( "beep" );
+
+			function myfun()
+			{
+				var tmp = Math.floor(Math.random() * 2);
+				if(tmp%2==0)
+				{
+					var head = document.getElementsByClassName("coin-heads")[0];
+							   head.getElementsByTagName("img")[0].src = "ihead.png";
+					var tail = document.getElementsByClassName("coin-tails")[0];
+							   tail.getElementsByTagName("img")[0].src = "itail.png";
+					var fav =  document.getElementsByClassName("favour")[0];
+								 fav.getElementsByTagName("img")[0].src = "ihead.png";
+				}
+				else
+				{
+					var head = document.getElementsByClassName("coin-heads")[0];
+							   head.getElementsByTagName("img")[0].src = "itail.png";
+					var tail = document.getElementsByClassName("coin-tails")[0];
+							   tail.getElementsByTagName("img")[0].src = "ihead.png";
+					var fav =  document.getElementsByClassName("favour")[0];
+								 fav.getElementsByTagName("img")[0].src = "itail.png";
+				}
+			}
+		</script>
+	</head>
+	<body onload="myfun()">
+		<section id="secondPage">
+			<div class="container">
+				<section class="animation">
+					<!-- <h2>Animation</h2> -->
+					<embed src="coin.wav" autostart="true" width="0" height="0" id="beep" 
+	  enablejavascript="true">
+					<audio autoplay>
+					  <source src="coin.ogg" type="audio/ogg">
+					  <source src="coin.mp3" type="audio/mpeg">
+					  	<source src="coin.wav" type="audio/wav">
+						Your browser does not support the audio element.
+					</audio>
+					<div class="wrap">
+					<div class="toss-area">
+					  	<div class="coin-flip">
+						  	<div class="coin-tails">
+						    	<img src="itail.png">
+						  	</div>
+						  	<div class="coin-heads">
+							    <img src="ihead.png">
+						  	</div>
+						</div>
+					</div>
+					</div>
+
+					<div class="info">
+						<span><b>Total Number of Possible Outcomes(Sample Space)</b></span>
+					</div>
+					<div class="sides_coin">
+						<div class="tail">
+						    <img src="itail.png">
+						</div>
+						<div class="head">
+						    <img src="ihead.png">
+						</div>
+					</div>
+					<div class="infoEvent">
+						<span><b>Number of Favorable Outcomes(In case of Head or Tail)</b></span>
+					</div>
+					<div class="sides_coin">
+					<div class="favour">
+						<img src="itail.png">
+					</div>
+					</div>
+				</section>
+				<div class="sub_container">
+					<section class="formula">
+						<h2>Formula</h2>
+						<!-- <svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"> -->
+						 <!-- <g> -->
+						  <!-- <title>Layer 1</title> -->
+						  <!-- <text transform="matrix(1,0,0,1.307692289352417,0,-46.15384340286255) " stroke="#000000" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_1" y="64.70588" x="316" stroke-width="0" fill="#000000">Probability of an Event =  Number of Favorable Outcomes</text> -->
+						  <!-- <line id="svg_2" y2="56" x2="597" y1="54" x1="287" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke="#000000" fill="none"/> -->
+						  <!-- <text transform="matrix(1,0,0,1.1538461446762085,0,-33.99999797344208) " stroke="#000000" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_3" y="108.53333" x="443" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000">Total Number of Possible Outcomes</text> -->
+						  <!-- <text id="svg_4" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="142.5" x="96.00781" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#000000">P(E) = n(E)</text> -->
+						  <!-- <text id="svg_6" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="175.5" x="131.00781" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#000000">n(S)</text> -->
+						  <!-- <line id="svg_8" y2="152.5" x2="157.00781" y1="151.5" x1="102.00781" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke="#000000" fill="none"/> -->
+						 <!-- </g> -->
+						<!-- </svg> -->
+						<span>
+							 <span class="frac" style="line-height: 70%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number of Favorable Outcomes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>Probability of an Event&nbsp;&nbsp;=&nbsp;&nbsp;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total Number of Possible Outcomes</span><br><br><br><br>
+						</span>
+						<span>
+							 <span class="frac" style="line-height: 70%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n(E)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>P(E)&nbsp;&nbsp;=&nbsp;&nbsp;&#x2013;&#x2013;&#x2013;&#x2013;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n(S)&nbsp;</span>
+						</span>
+					</section>
+					<section class="description">
+						<h2>Description</h2>
+						<p>Here we have to find the probablity of that an tail side is obtained when the coin is tossed once.</p>
+						<span>
+							 <span class=frac; style="line-height: 70%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n(E)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1<br>P(E)&nbsp;&nbsp;=&nbsp;&nbsp;&#x2013;&#x2013;&#x2013;&#x2013;&nbsp;&nbsp;=&nbsp;&nbsp;&#x2013;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n(S)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</span>
+						</span>
+						<!-- <math xmlns='http://www.w3.org/1998/Math/MathML'>
+							<mi>P(E)</mi>
+								<mo>=</mo>
+								<mfrac>
+									<mi>n(E)</mi>
+									<mi>n(S)</mi>
+								</mfrac>
+								<mo>=</mo>
+								<mfrac>
+									<mi>3</mi>
+									<mi>6</mi>
+								</mfrac>
+								<mo>=</mo>
+								<mfrac>
+									<mi>1</mi>
+									<mi>2</mi>
+								</mfrac>
+						</math> -->
+					</section>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

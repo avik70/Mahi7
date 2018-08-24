@@ -1,0 +1,252 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			window.addEventListener("load", myFunction);
+			var firstPage=document.getElementById('firstPage');
+			function myFunction() { 
+			    setTimeout(function() {
+			        window.location.href="./Coin.html";
+			    }, 44000);
+			}
+			function playSound ( soundname )   
+			{
+				var thissound = document.getElementById( soundname );
+				thissound.Play();
+				alert( "Played " + soundname );
+			}
+			playSound( "beep" );
+		</script>
+		<link href="formulas.css" rel="stylesheet" media="screen">
+		<link href="dice.css" rel="stylesheet" media="screen">
+	</head>
+	<body>
+		<section id="firstPage">
+			<div class="container">
+				<section class="animation">
+					<!-- <h2>Animation</h2> -->
+					<embed src="dice.wav" width="0" height="0" id="beep" 
+	  enablejavascript="true">
+					<audio>
+					  <source src="dice.ogg" type="audio/ogg">
+					  <source src="dice.mp3" type="audio/mpeg">
+					  	<source src="dice.wav" type="audio/wav">
+						Your browser does not support the audio element.
+					</audio>
+					<div id="background"></div>
+					<div id="wrapper">
+					  <div id="platform">
+					    <div id="dice">
+					      <div class="side front">
+					        <div class="dot center"></div>
+					      </div>
+					      <div class="side front inner"></div>
+					      <div class="side top">
+					        <div class="dot dtop dleft"></div>
+					        <div class="dot dbottom dright"></div>
+					      </div>
+					      <div class="side top inner"></div>
+					      <div class="side right">
+					        <div class="dot dtop dleft"></div>
+					        <div class="dot center"></div>
+					        <div class="dot dbottom dright"></div>
+					      </div>
+					      <div class="side right inner"></div>
+					      <div class="side left">
+					        <div class="dot dtop dleft"></div>
+					        <div class="dot dtop dright"></div>
+					        <div class="dot dbottom dleft"></div>
+					        <div class="dot dbottom dright"></div>
+					      </div>
+					      <div class="side left inner"></div>
+					      <div class="side bottom">
+					        <div class="dot center"></div>
+					        <div class="dot dtop dleft"></div>
+					        <div class="dot dtop dright"></div>
+					        <div class="dot dbottom dleft"></div>
+					        <div class="dot dbottom dright"></div>
+					      </div>
+					      <div class="side bottom inner"></div>
+					      <div class="side back">
+					        <div class="dot dtop dleft"></div>
+					        <div class="dot dtop dright"></div>
+					        <div class="dot dbottom dleft"></div>
+					        <div class="dot dbottom dright"></div>
+					        <div class="dot center dleft"></div>
+					        <div class="dot center dright"></div>
+					      </div>
+					      <div class="side back inner"></div>
+					      <div class="side cover x"></div>
+					      <div class="side cover y"></div>
+					      <div class="side cover z"></div>
+					    </div>
+					  </div>
+					</div>
+
+					<div class="info">
+						<span><b>Total Number of Possible Outcomes(Sample Space)</b></span>
+					</div>
+					<div class="sides">
+						<div class="elementO1">
+							<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+							 <g>
+							  <title>Layer 1</title>
+							  <circle stroke="#ffffff" fill="#ffffff" stroke-width="5" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="29" cy="30.5" r="4.23607" id="svg_5"/>
+							 </g>
+							</svg>
+						</div>
+						<div class="elementE1">
+							<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+							 <g>
+							  <title>Layer 1</title>
+							  <circle id="svg_5" r="4.23607" cy="37.5" cx="24" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff"/>
+							  <circle r="4.23607" cy="22.5" cx="38" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff" id="svg_1"/>
+							 </g>
+							</svg>
+						</div>
+						<div class="elementO2">
+							<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+							 <g>
+							  <title>Layer 1</title>
+							  <circle id="svg_5" r="4.23607" cy="44.5" cx="17" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff"/>
+							  <circle r="4.23607" cy="29.5" cx="31" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff" id="svg_1"/>
+							  <circle id="svg_2" r="4.23607" cy="14.5" cx="45" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff"/>
+							 </g>
+							</svg>
+						</div>
+						<div class="elementE2">
+							<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+							 <g>
+							  <title>Layer 1</title>
+							  <circle id="svg_5" r="4.23607" cy="44.5" cx="17" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff"/>
+							  <circle r="4.23607" cy="14.5" cx="17" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff" id="svg_1"/>
+							  <circle id="svg_2" r="4.23607" cy="14.5" cx="45" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff"/>
+							  <circle id="svg_3" r="4.23607" cy="44.5" cx="45" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff"/>
+							 </g>
+							</svg>
+						</div>
+						<div class="elementO3">
+							<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+							 <g>
+							  <title>Layer 1</title>
+							  <circle id="svg_5" r="4.23607" cy="44.5" cx="17" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff"/>
+							  <circle r="4.23607" cy="14.5" cx="17" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff" id="svg_1"/>
+							  <circle id="svg_2" r="4.23607" cy="14.5" cx="45" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff"/>
+							  <circle id="svg_3" r="4.23607" cy="44.5" cx="45" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff"/>
+							  <circle id="svg_4" r="4.23607" cy="29.5" cx="31" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff"/>
+							 </g>
+							</svg>
+						</div>
+						<div class="elementE3">
+							<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+							 <g>
+							  <title>Layer 1</title>
+							  <circle id="svg_5" r="4.23607" cy="44.5" cx="17" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff"/>
+							  <circle r="4.23607" cy="14.5" cx="17" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff" id="svg_1"/>
+							  <circle id="svg_2" r="4.23607" cy="14.5" cx="45" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff"/>
+							  <circle id="svg_3" r="4.23607" cy="44.5" cx="45" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff"/>
+							  <circle id="svg_4" r="4.23607" cy="29.5" cx="17" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff"/>
+							  <circle id="svg_6" r="4.23607" cy="29.5" cx="45" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff"/>
+							 </g>
+							</svg>
+						</div>
+						<div class="elementDO1">
+							<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+							 <g>
+							  <title>Layer 1</title>
+							  <circle stroke="#ffffff" fill="#ffffff" stroke-width="5" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="29" cy="30.5" r="4.23607" id="svg_5"/>
+							 </g>
+							</svg>
+						</div>
+						<div class="elementDO2">
+							<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+							 <g>
+							  <title>Layer 1</title>
+							  <circle id="svg_5" r="4.23607" cy="44.5" cx="17" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff"/>
+							  <circle r="4.23607" cy="29.5" cx="31" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff" id="svg_1"/>
+							  <circle id="svg_2" r="4.23607" cy="14.5" cx="45" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff"/>
+							 </g>
+							</svg>
+						</div>
+						<div class="elementDO3">
+							<!-- <span style="font-size: 35px;"><b>5</b></span> -->
+							<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+							 <g>
+							  <title>Layer 1</title>
+							  <circle id="svg_5" r="4.23607" cy="44.5" cx="17" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff"/>
+							  <circle r="4.23607" cy="14.5" cx="17" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff" id="svg_1"/>
+							  <circle id="svg_2" r="4.23607" cy="14.5" cx="45" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff"/>
+							  <circle id="svg_3" r="4.23607" cy="44.5" cx="45" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff"/>
+							  <circle id="svg_4" r="4.23607" cy="29.5" cx="31" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#ffffff" stroke="#ffffff"/>
+							 </g>
+							</svg>
+						</div>
+					</div>
+					<div class="infoEvent">
+						<span><b>Number of Favorable Outcomes(In case of ODD Number)</b></span>
+					</div>
+				</section>
+				<div class="sub_container">
+					<section class="formula">
+						<h2>Formula</h2>
+						<!-- <svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+						 <g>
+						  <title>Layer 1</title>
+						  <text transform="matrix(1,0,0,1.307692289352417,0,-46.15384340286255) " stroke="#000000" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_1" y="64.70588" x="316" stroke-width="0" fill="#000000">Probability of an Event =  Number ofFavorable Outcomes</text>
+						  <line id="svg_2" y2="56" x2="597" y1="54" x1="287" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke="#000000" fill="none"/>
+						  <text transform="matrix(1,0,0,1.1538461446762085,0,-33.99999797344208) " stroke="#000000" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_3" y="108.53333" x="443" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000">Total Number of Possible Outcomes</text>
+						  <text id="svg_4" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="142.5" x="96.00781" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#000000">P(E) = n(E)</text>
+						  <text id="svg_6" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="175.5" x="131.00781" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#000000">n(S)</text>
+						  <line id="svg_8" y2="152.5" x2="157.00781" y1="151.5" x1="102.00781" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke="#000000" fill="none"/>
+						 </g>
+						</svg> -->
+						<span>
+							 <span class="frac" style="line-height: 70%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number of Favorable Outcomes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>Probability of an Event&nbsp;&nbsp;=&nbsp;&nbsp;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total Number of Possible Outcomes</span><br><br><br><br>
+						</span>
+						<span>
+							 <span class="frac" style="line-height: 70%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n(E)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>P(E)&nbsp;&nbsp;=&nbsp;&nbsp;&#x2013;&#x2013;&#x2013;&#x2013;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n(S)&nbsp;</span>
+						</span>
+					</section>
+					<section class="description">
+						<h2>Description</h2>
+						<p>Here we have to find the probablity of that an odd number is obtained when the dice is rolled once.</p>
+						<span>
+							 <span class=frac; style="line-height: 70%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n(E)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1<br>P(E)&nbsp;&nbsp;=&nbsp;&nbsp;&#x2013;&#x2013;&#x2013;&#x2013;&nbsp;&nbsp;=&nbsp;&nbsp;&#x2013;&nbsp;&nbsp;=&nbsp;&nbsp;&#x2013;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n(S)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</span>
+						</span>
+						<h2>Exhaustive events: </h2>
+						<p>
+							In probability, exhaustive is a condition of two or more events which serves a great role in finding the probability as it changes if the events are exhaustive or not. Two or more events are said to be exhaustive if there is a certain chance of occurrence of at least one of them when they are all considered together.
+						</p>
+						<p>
+							consider the experiment of a fair die being thrown. Then there are six outcomes and all of them are equally likely to occur. 
+						</p>
+						<p>
+							events of getting different numbers taken together are exhaustive as together at least one of them is certain to happen.
+						</p>
+						<p>
+							For if we take events like getting a odd number and a number that prime will not be certain to occur and hence are not exhaustive.
+						</p>
+
+						<!-- <math xmlns='http://www.w3.org/1998/Math/MathML'>
+							<mi>P(E)</mi>
+								<mo>=</mo>
+								<mfrac>
+									<mi>n(E)</mi>
+									<mi>n(S)</mi>
+								</mfrac>
+								<mo>=</mo>
+								<mfrac>
+									<mi>3</mi>
+									<mi>6</mi>
+								</mfrac>
+								<mo>=</mo>
+								<mfrac>
+									<mi>1</mi>
+									<mi>2</mi>
+								</mfrac>
+						</math> -->
+					</section>
+				</div>
+			</div>
+	</section>
+	</body>
+</html>

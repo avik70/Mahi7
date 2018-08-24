@@ -1,0 +1,919 @@
+
+@media (min-width: 1025px) {
+  
+  .container{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .animation{
+    width: 50%;
+    background: #f0e68c;
+    height: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    /*margin: 1% 0 1% 1%;*/
+  }
+  .sub_container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /*margin: 1% 1% 1%;*/
+    margin-top: 1%;
+    margin-bottom: 1%;
+    
+  }  
+  /*animation Coin Flipping------------------------------------------------------------------------*/
+	.wrap {
+		margin-top: 25px;
+		perspective: 1000px;
+		perspective-origin: 50% 50%;
+	}
+
+	.toss-area
+	{
+		width:100%;
+		height:300px;
+		margin:0;
+	}
+
+	.coin-flip{
+		width: 100px;
+		height: 100px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		transform-style: preserve-3d;
+		position: absolute;
+		animation: fly 2s ease-in-out 0s 2 alternate;
+		animation-fill-mode: forwards;
+	}
+	.coin-flip img{
+		width: 100px;
+	}
+
+	.coin-heads, .coin-tails {
+		backface-visibility: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.coin-heads{
+		animation: flip-head 1s linear 0s 4 alternate;
+	}
+	.coin-tails{
+		animation: flip-tail 1s linear 0s 4 alternate;
+	}
+
+	@keyframes fly {
+		0% { top: 65%; }
+		100% { top: 0%; }
+	}
+
+	@keyframes flip-head {
+		0%, 100% { transform: rotateX(0deg); }
+		50% { transform: rotateX(180deg); }
+	}
+
+	@keyframes flip-tail {
+		0%, 100% { transform: rotateX(180deg); }
+		50% { transform: rotateX(0deg); }
+	}
+	
+	.info{
+    padding-top: 10px;
+  }
+  .info span{
+    font-size: 20px;
+    display: block;
+    animation: info 5s linear;
+  }
+  .infoEvent{
+    padding-top: 10px;
+  }
+  .infoEvent span{
+    font-size: 20px;
+    display: block;
+    animation: infoEvent 10s linear;
+  }
+  @keyframes info{
+    0%   {opacity: 0;display: none;}
+      25%  {opacity: 0;display: none;}
+      50%  {opacity: 0;display: none;}
+      75%  {opacity: 0.6;display: block;}
+      100% {opacity: 1;display: block;}
+  }
+  @keyframes infoEvent{
+    0%   {opacity: 0;display: none;}
+      25%  {opacity: 0;display: none;}
+      50%  {opacity: 0;display: none;}
+      75%  {opacity: 0.6;display: block;}
+      100% {opacity: 1;display: block;}
+  }
+	
+	.sides{
+		width: 100%;
+	}
+	.sides_coin{
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		justify-content:space-around;
+	  padding-top:10px;	
+		width: 100%;
+    position: relative;
+		height:100px;		
+	}
+	.tail{
+		width:100px;
+		float:left;
+		animation: fcoin 5s linear forwards;
+	}
+	@keyframes fcoin
+	{
+			0% {opacity:0;}
+			100% {opacity:1;}
+	}
+	.tail img{
+		width:100%;
+	}
+	.head{
+		width:100px;
+		animation: fcoin 5s linear forwards;
+	}
+	.head img{
+		width:100%;
+	}
+	.favour{
+		width:100px;
+		animation: scoin 10s linear forwards;
+	}
+	@keyframes scoin
+	{
+			0% {opacity:0;}
+			50% {opacity:0;}
+			100% {opacity:1;}
+	}
+	.favour img{
+		width:100%;
+	}
+	/*-----------------------------------------------------------------*/
+
+  /*formula----------------------------------------------------------*/
+	
+	.formula{
+    background: #98fb98;
+    width: 98%;
+    height: 50%;
+    border-bottom: 1px solid black;
+    padding: 0 1% 1% 1%;
+  }
+	
+  .formula span{
+    font-size: 18px;
+    font-weight: bold;
+    animation :demo 5s infinite alternate linear forwards;
+  }
+
+  /*svg{
+    stroke-dasharray: 150;
+    animation :demo 5s infinite alternate linear forwards;
+  }*/
+
+  @keyframes demo{
+    0%{
+      fill:none;
+      stroke-dashoffset:1000;
+      opacity: 0.6;
+    }
+    50%{
+      fill:rgba(255,0,0,0);
+      stroke-dashoffset:75;
+      opacity: 0.8;
+    }
+    100%{
+      stroke-dashoffset:0;
+      opacity: 1;
+
+    }
+  }
+	
+	/*-----------------------------------------------------------------*/
+
+  /*description------------------------------------------------------*/
+	
+	.description{
+    width: 98%;
+    background: #66cdaa;
+    height: 50%;
+    padding: 0 1% 1% 1%;
+  }
+	
+  p{
+    font-family: courier;
+    font-size: 20px;
+  }
+  .description span{
+    font-size: 20px;
+  }
+  /*mi{
+    font-size: 30px;
+  }*/
+  
+	/*-----------------------------------------------------------------*/
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  .container{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .animation{
+    width: 100%;
+    background: #f0e68c;
+    height: 105%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    /*margin: 1% 0 1% 1%;*/
+
+  }
+  .sub_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /*margin: 1% 1% 1%;*/
+    margin-top: 1%;
+    margin-bottom: 1%;
+    
+  }
+	/*animation Coin Flipping------------------------------------------------------------------------*/
+	.wrap {
+		margin-top: 25px;
+		perspective: 1000px;
+		perspective-origin: 50% 50%;
+	}
+
+	.toss-area
+	{
+		width:100%;
+		height:300px;
+		margin:0;
+	}
+
+	.coin-flip{
+		width: 100px;
+		height: 100px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		transform-style: preserve-3d;
+		position: absolute;
+		animation: fly 2s ease-in-out 0s 2 alternate;
+		animation-fill-mode: forwards;
+	}
+	.coin-flip img{
+		width: 100px;
+	}
+
+	.coin-heads, .coin-tails {
+		backface-visibility: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.coin-heads{
+		animation: flip-head 1s linear 0s 4 alternate;
+	}
+	.coin-tails{
+		animation: flip-tail 1s linear 0s 4 alternate;
+	}
+
+	@keyframes fly {
+		0% { top: 65%; }
+		100% { top: 0%; }
+	}
+
+	@keyframes flip-head {
+		0%, 100% { transform: rotateX(0deg); }
+		50% { transform: rotateX(180deg); }
+	}
+
+	@keyframes flip-tail {
+		0%, 100% { transform: rotateX(180deg); }
+		50% { transform: rotateX(0deg); }
+	}
+
+	.info{
+    padding-top: 10px;
+  }
+  .info span{
+    font-size: 20px;
+    display: block;
+    animation: info 35s linear;
+  }
+  .infoEvent{
+    padding-top: 10px;
+  }
+  .infoEvent span{
+    font-size: 20px;
+    display: block;
+    animation: infoEvent 40s linear;
+  }
+  @keyframes info{
+    0%   {opacity: 0;display: none;}
+      25%  {opacity: 0;display: none;}
+      50%  {opacity: 0;display: none;}
+      75%  {opacity: 0.6;display: block;}
+      100% {opacity: 1;display: block;}
+  }
+  @keyframes infoEvent{
+    0%   {opacity: 0;display: none;}
+      25%  {opacity: 0;display: none;}
+      50%  {opacity: 0;display: none;}
+      75%  {opacity: 0.6;display: block;}
+      100% {opacity: 1;display: block;}
+  }
+	
+	.sides{
+		width: 100%;
+	}
+	.sides_coin{
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		justify-content:space-around;
+	  padding-top:10px;	
+		width: 100%;
+    position: relative;
+		height:100px;		
+	}
+	.tail{
+		width:100px;
+		float:left;
+		animation: fcoin 5s linear forwards;
+	}
+	@keyframes fcoin
+	{
+			0% {opacity:0;}
+			100% {opacity:1;}
+	}
+	.tail img{
+		width:100%;
+	}
+	.head{
+		width:100px;
+		animation: fcoin 5s linear forwards;
+	}
+	.head img{
+		width:100%;
+	}
+	.favour{
+		width:100px;
+		animation: scoin 10s linear forwards;
+	}
+	@keyframes scoin
+	{
+			0% {opacity:0;}
+			50% {opacity:0;}
+			100% {opacity:1;}
+	}
+	.favour img{
+		width:100%;
+	}
+	/*-----------------------------------------------------------------*/
+
+  /*formula----------------------------------------------------------*/
+	
+	 .formula{
+    background: #98fb98;
+    width: 98%;
+    height: 50%;
+    border-bottom: 1px solid black;
+    padding: 0 1% 1% 1%;
+  }
+	
+  .formula span{
+    font-size: 24px;
+    font-weight: bold;
+    animation :demo 5s infinite alternate linear forwards;
+  }
+
+  /*svg{
+    stroke-dasharray: 150;
+    animation :demo 5s infinite alternate linear forwards;
+  }*/
+
+  @keyframes demo{
+    0%{
+      fill:none;
+      stroke-dashoffset:1000;
+      opacity: 0.6;
+    }
+    50%{
+      fill:rgba(255,0,0,0);
+      stroke-dashoffset:75;
+      opacity: 0.8;
+    }
+    100%{
+      stroke-dashoffset:0;
+      opacity: 1;
+    }
+  }
+	
+	/*-----------------------------------------------------------------*/
+
+  /*description------------------------------------------------------*/
+	
+	.description{
+    width: 98%;
+    background: #66cdaa;
+    height: auto; /* 50% */
+    padding: 0 1% 1% 1%;
+  }
+	
+  p{
+    font-family: courier;
+    font-size: 22px;
+  }
+  .description span{
+    font-size: 22px;
+  }
+  /*mi{
+    font-size: 30px;
+  }*/
+  
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  .container{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .animation{
+    width: 100%;
+    background: #f0e68c;
+    height: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    /*margin: 1% 0 1% 1%;*/
+
+  }
+  .sub_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /*margin: 1% 1% 1%;*/
+    margin-top: 1%;
+    margin-bottom: 1%;
+    
+  }
+  
+  /*animation Coin Flipping------------------------------------------------------------------------*/
+	.wrap {
+		margin-top: 25px;
+		perspective: 1000px;
+		perspective-origin: 50% 50%;
+	}
+
+	.toss-area
+	{
+		width:100%;
+		height:300px;
+		margin:0;
+	}
+
+	.coin-flip{
+		width: 100px;
+		height: 100px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		transform-style: preserve-3d;
+		position: absolute;
+		animation: fly 2s ease-in-out 0s 2 alternate;
+		animation-fill-mode: forwards;
+	}
+	.coin-flip img{
+		width: 100px;
+	}
+
+	.coin-heads, .coin-tails {
+		backface-visibility: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.coin-heads{
+		animation: flip-head 1s linear 0s 4 alternate;
+	}
+	.coin-tails{
+		animation: flip-tail 1s linear 0s 4 alternate;
+	}
+
+	@keyframes fly {
+		0% { top: 65%; }
+		100% { top: 0%; }
+	}
+
+	@keyframes flip-head {
+		0%, 100% { transform: rotateX(0deg); }
+		50% { transform: rotateX(180deg); }
+	}
+
+	@keyframes flip-tail {
+		0%, 100% { transform: rotateX(180deg); }
+		50% { transform: rotateX(0deg); }
+	}
+	
+	.info{
+    padding-top: 10px;
+  }
+  .info span{
+    font-size: 20px;
+    display: block;
+    animation: info 35s linear;
+  }
+  .infoEvent{
+    padding-top: 10px;
+  }
+  .infoEvent span{
+    font-size: 20px;
+    display: block;
+    animation: infoEvent 40s linear;
+  }
+  @keyframes info{
+    0%   {opacity: 0;display: none;}
+      25%  {opacity: 0;display: none;}
+      50%  {opacity: 0;display: none;}
+      75%  {opacity: 0.6;display: block;}
+      100% {opacity: 1;display: block;}
+  }
+  @keyframes infoEvent{
+    0%   {opacity: 0;display: none;}
+      25%  {opacity: 0;display: none;}
+      50%  {opacity: 0;display: none;}
+      75%  {opacity: 0.6;display: block;}
+      100% {opacity: 1;display: block;}
+  }
+	
+	.sides{
+		width: 100%;
+	}
+	.sides_coin{
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		justify-content:space-around;
+	  padding-top:10px;	
+		width: 100%;
+    position: relative;
+		height:100px;		
+	}
+	.tail{
+		width:100px;
+		float:left;
+		animation: fcoin 5s linear forwards;
+	}
+	@keyframes fcoin
+	{
+			0% {opacity:0;}
+			100% {opacity:1;}
+	}
+	.tail img{
+		width:100%;
+	}
+	.head{
+		width:100px;
+		animation: fcoin 5s linear forwards;
+	}
+	.head img{
+		width:100%;
+	}
+	.favour{
+		width:100px;
+		animation: scoin 10s linear forwards;
+	}
+	@keyframes scoin
+	{
+			0% {opacity:0;}
+			50% {opacity:0;}
+			100% {opacity:1;}
+	}
+	.favour img{
+		width:100%;
+	}
+	/*-----------------------------------------------------------------*/
+
+  /*formula----------------------------------------------------------*/
+	
+	 .formula{
+    background: #98fb98;
+    width: 98%;
+    height: 40%;
+    border-bottom: 1px solid black;
+    padding: 0 1% 1% 1%;
+  }
+	
+  .formula span{
+    font-size: 16px;
+    font-weight: bold;
+    animation :demo 5s infinite alternate linear forwards;
+  }
+
+  /*svg{
+    stroke-dasharray: 150;
+    animation :demo 5s infinite alternate linear forwards;
+  }*/
+
+  @keyframes demo{
+    0%{
+      fill:none;
+      stroke-dashoffset:1000;
+      opacity: 0.6;
+    }
+    50%{
+      fill:rgba(255,0,0,0);
+      stroke-dashoffset:75;
+      opacity: 0.8;
+    }
+    100%{
+      stroke-dashoffset:0;
+      opacity: 1;
+
+    }
+  }
+	
+	/*-----------------------------------------------------------------*/
+
+  /*description------------------------------------------------------*/
+	
+	.description{
+    width: 98%;
+    background: #66cdaa;
+    height: auto;
+    padding: 0 1% 1% 1%;
+  }
+	
+  p{
+    font-family: courier;
+    font-size: 20px;
+  }
+  .description span{
+    font-size: 20px;
+  }
+  /*mi{
+    font-size: 30px;
+  }*/
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 240px) and (max-width: 480px) {
+
+  .container{
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .animation{
+    width: 100%;
+    background: #f0e68c;
+    height: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    /*margin: 1% 0 1% 1%;*/
+
+  }
+  .sub_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /*margin: 1% 1% 1%;*/
+    margin-top: 1%;
+    margin-bottom: 1%;
+    
+  }
+
+  /*animation Coin Flipping------------------------------------------------------------------------*/
+	.wrap {
+		margin-top: 25px;
+		perspective: 1000px;
+		perspective-origin: 50% 50%;
+	}
+
+	.toss-area
+	{
+		width:100%;
+		height:300px;
+		margin:0;
+	}
+
+	.coin-flip{
+		width: 100px;
+		height: 100px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		transform-style: preserve-3d;
+		position: absolute;
+		animation: fly 2s ease-in-out 0s 2 alternate;
+		animation-fill-mode: forwards;
+	}
+	.coin-flip img{
+		width: 100px;
+	}
+
+	.coin-heads, .coin-tails {
+		backface-visibility: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.coin-heads{
+		animation: flip-head 1s linear 0s 4 alternate;
+	}
+	.coin-tails{
+		animation: flip-tail 1s linear 0s 4 alternate;
+	}
+
+	@keyframes fly {
+		0% { top: 65%; }
+		100% { top: 0%; }
+	}
+
+	@keyframes flip-head {
+		0%, 100% { transform: rotateX(0deg); }
+		50% { transform: rotateX(180deg); }
+	}
+
+	@keyframes flip-tail {
+		0%, 100% { transform: rotateX(180deg); }
+		50% { transform: rotateX(0deg); }
+	}
+
+	.info{
+    padding-top: 10px;
+  }
+  .info span{
+    font-size: 18px;
+    display: block;
+    animation: info 35s linear;
+  }
+  .infoEvent{
+    padding-top: 10px;
+  }
+  .infoEvent span{
+    font-size: 18px;
+    display: block;
+    animation: infoEvent 40s linear;
+  }
+  @keyframes info{
+      0%   {opacity: 0;display: none;}
+      25%  {opacity: 0;display: none;}
+      50%  {opacity: 0;display: none;}
+      75%  {opacity: 0.6;display: block;}
+      100% {opacity: 1;display: block;}
+  }
+  @keyframes infoEvent{
+      0%   {opacity: 0;display: none;}
+      25%  {opacity: 0;display: none;}
+      50%  {opacity: 0;display: none;}
+      75%  {opacity: 0.6;display: block;}
+      100% {opacity: 1;display: block;}
+  }
+	
+	.sides{
+		width: 100%;
+	}
+	.sides_coin{
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		justify-content:space-around;
+	  padding-top:10px;	
+		width: 100%;
+    position: relative;
+		height:100px;		
+	}
+	.tail{
+		width:100px;
+		float:left;
+		animation: fcoin 5s linear forwards;
+	}
+	@keyframes fcoin
+	{
+			0% {opacity:0;}
+			100% {opacity:1;}
+	}
+	.tail img{
+		width:100%;
+	}
+	.head{
+		width:100px;
+		animation: fcoin 5s linear forwards;
+	}
+	.head img{
+		width:100%;
+	}
+	.favour{
+		width:100px;
+		animation: scoin 10s linear forwards;
+	}
+	@keyframes scoin
+	{
+			0% {opacity:0;}
+			50% {opacity:0;}
+			100% {opacity:1;}
+	}
+	.favour img{
+		width:100%;
+	}
+	/*-----------------------------------------------------------------*/
+
+  /*formula----------------------------------------------------------*/
+	
+	.formula{
+    background: #98fb98;
+    width: 98%;
+    height: 40%;
+    border-bottom: 1px solid black;
+    padding: 0 1% 1% 1%;
+  }
+	
+  .formula span{
+    font-size: 12px;
+    font-weight: bold;
+    animation :demo 5s infinite alternate linear forwards;
+  }
+
+  /*svg{
+    stroke-dasharray: 150;
+    animation :demo 5s infinite alternate linear forwards;
+  }*/
+
+  @keyframes demo{
+    0%{
+      fill:none;
+      stroke-dashoffset:1000;
+      opacity: 0.6;
+    }
+    50%{
+      fill:rgba(255,0,0,0);
+      stroke-dashoffset:75;
+      opacity: 0.8;
+    }
+    100%{
+      stroke-dashoffset:0;
+      opacity: 1;
+
+    }
+  }
+	
+	/*-----------------------------------------------------------------*/
+
+  /*description------------------------------------------------------*/
+	
+	.description{
+    width: 98%;
+    background: #66cdaa;
+    height: auto;
+    padding: 0 1% 1% 1%;
+  }
+	
+  p{
+    font-family: courier;
+    font-size: 20px;
+  }
+  .description span{
+    font-size: 20px;
+  }
+  /*mi{
+    font-size: 30px;
+  }*/
+
+}
